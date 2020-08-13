@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            function findSmallestAndLargest(array)
+            {
+                var smallest = array[0];
+                var largest = array[0];
+                for (var i = 1; i < array.length; i++)
+                {
+                    if (array[i] < smallest)
+                    {
+                        smallest = array[i];
+                    }
+                    else if (array[i] > largest)
+                    {
+                        largest = array[i];
+                    }
+                }
+                console.log(smallest);
+                console.log(largest);
+            }
+            alert(findSmallestAndLargest([1,3,4,5,6]));
+        </script>
+    </body>
+</html>
